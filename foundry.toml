@@ -1,0 +1,18 @@
+[profile.default]
+src = "contracts"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.24"
+optimizer = true
+optimizer_runs = 200
+via_ir = false
+evm_version = "shanghai"
+
+[profile.default.fuzz]
+runs = 256
+max_test_rejects = 65536
+
+[fmt]
+line_length = 120
+tab_width = 4
+bracket_spacing = false
